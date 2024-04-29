@@ -54,6 +54,12 @@
 ```t
 # Template
 az aks get-credentials --resource-group <Resource-Group-Name> --name <Cluster-Name>
+az aks get-credentials --resource-group aiedge-aks-poc-rg --name aksdemo1
+
+az aks stop --name aksdemo1 --resource-group aiedge-aks-poc-rg
+az aks show --name aksdemo1 --resource-group aiedge-aks-poc-rg
+
+az aks start --name aksdemo1 --resource-group aiedge-aks-poc-rg
 
 # Replace Resource Group & Cluster Name
 az aks get-credentials --resource-group aks-rg1 --name aksdemo1
