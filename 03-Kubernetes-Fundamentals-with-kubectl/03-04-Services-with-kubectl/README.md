@@ -74,6 +74,8 @@ http://<External-IP-from-get-service-output>/hello
 
 
 - ** Clean up
+
+  
 kubectl delete deployment my-backend-rest-app
 kubectl delete deployment my-frontend-nginx-app
 kubectl delete svc my-frontend-service
