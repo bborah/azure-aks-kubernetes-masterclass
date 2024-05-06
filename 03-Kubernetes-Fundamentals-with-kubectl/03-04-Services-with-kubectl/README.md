@@ -71,3 +71,12 @@ kubectl scale --replicas=10 deployment/my-backend-rest-app
 # Test again to view the backend service Load Balancing
 http://<External-IP-from-get-service-output>/hello
 ```
+
+
+- ** Clean up
+kubectl delete deployment my-backend-rest-app
+kubectl delete deployment my-frontend-nginx-app
+kubectl delete svc my-frontend-service
+kubectl delete svc my-backend-service
+
+  
